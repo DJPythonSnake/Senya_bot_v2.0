@@ -1,7 +1,6 @@
 #imports
-import webbrowser
 import os
-
+import webbrowser
 
 
 def say(text_command):
@@ -40,10 +39,10 @@ def say(text_command):
 
 
 while True:
-    funcs = ['погуглить', 'Запустить команду', 'посчитать']
+    funcs = ['Погуглить', 'Запустить команду', 'Посчитать']
     for i in funcs:
         print('-------------------------------')
         print(i)
 
-    text_command = input()
+    text_command = input().lower()
     say(text_command)
