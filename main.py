@@ -1,10 +1,10 @@
 #imports
 import os
+import time
 import webbrowser
 
 
 def say(text_command):
-    funcs = ['Открой браузер', 'Запустить команду', 'посчитать']
     
     if text_command == 'погуглить':
         os.system('clear')
@@ -31,7 +31,9 @@ def say(text_command):
         print("Пока!")
         quit()
     else:
+        os.system('clear')
         print('Я не понимаю')
+        time.sleep(1)
 
 
 
